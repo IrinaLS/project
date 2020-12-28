@@ -1,0 +1,44 @@
+
+.filter{
+    background-color: #FFFFFF;
+    width: 1600px;
+    margin: 0 auto;  			
+
+    .filter__list{
+        display: flex;
+        justify-content: start;	
+        padding:51px 0 16px 0;
+        }
+    .filter__name {			
+        @include font(14px,17px,600);
+        color: #000000;
+        text-transform: uppercase;
+        display: block;
+        padding:0 11px 0 0;
+        &:hover {	
+            color:$pink-color;
+            }
+        }
+    .filter__item {
+        @include flex-center-space-between ();
+        padding:0 0 0 320px;			
+        }
+        .filter__item-name{				
+            text-decoration: none;
+            text-transform: uppercase;
+            @include font(14px,17px,300);
+            color: #636363;
+            &:hover{
+                color: $pink-color;
+                }
+            }
+            
+    .filter__arrow{
+    padding:0 28px 0 0;			
+    }
+    }
+  
+    
+  
+  
+  

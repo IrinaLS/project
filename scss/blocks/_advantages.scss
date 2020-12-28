@@ -1,0 +1,48 @@
+
+.advantages {
+    background-color: $black-color;
+    width: 1600px;
+    margin: 0 auto;
+
+    .advantages__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .advantages__picture {
+    display: flex;
+    justify-content: center;
+    padding: 103px 0 0 0;
+    &:hover {
+    opacity: .8;
+    }
+    &:active {
+    opacity: .5;
+    }
+    }
+    .advantages__title {
+    display: flex;
+    justify-content: center;
+    padding: 19px 0 0 0;
+    color: #FBFBFB;
+    @include font (20px, 24px, 400);
+    text-transform: capitalize;
+    text-decoration: none;
+    &:hover {
+        opacity: .7;
+    }
+    &:active {
+        opacity: .5;
+    }
+    }
+    
+    .advantages__descride {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0 104px 0;
+    width: 300px;
+    color: #FBFBFB;
+    @include font(14px,17px,300);
+    text-decoration: none;
+    }
+}

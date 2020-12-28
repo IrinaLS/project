@@ -1,0 +1,65 @@
+
+.stock__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 63px 0 0 0;
+    padding: 0;
+}
+
+.stock__item {
+    width: 360px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(1) {
+        background-image: url(../img/stock-women.jpg);
+    }
+    &:nth-child(2) {
+        background-image: url(../img/stock-men.jpg);
+    }
+    &:nth-child(3) {
+        background-image: url(../img/stock-kid.jpg);
+    }
+    &:nth-child(4) {
+        background-image: url(../img/stock-goods.jpg);
+        margin-top: 30px;
+        width: 100%;
+        height: 180px;
+    }
+    &:hover {
+        box-shadow: 0 0 5px 2px #FF6A6A
+    }
+    
+    .stock__item-name {
+        @include font(16px,19px,400);
+        color:$white-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            opacity: .8;
+        }
+        &:active {
+            opacity: .5;
+        }
+    }
+        
+    .stock__item-category {
+        color: $pink-color;
+        @include font(24px,28px,700);
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            opacity: .8;
+        }
+        &:active {
+            opacity: .5;
+        }
+    }
+     
+}
+
+

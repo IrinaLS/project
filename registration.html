@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet"> </head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo-container">
+                <a href="index.html"> <img src="./img/logo.svg" alt="логотип" class="header__logo" width="44" height="38"></a>
+                <div class="header__search">
+                    <button class="header__button"><img src="./img/loupe.svg" alt="лупа" width="26" height="27"></button>
+                </div>
+            </div>
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <div>
+                        <a href="catalog.html">
+                            <svg class="icon" width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8" /> </svg>
+                        </a>
+                        <button class="header__button"></button>
+                    </div>
+                </li>
+                <li class="header__menu-item">
+                    <button class="header__button"> <img src="./img/icon-personal-area.svg" alt="forma1" class="header__logo" width="29" height="29"> </button>
+                </li>
+                <li class="header__menu-item">
+                    <div>
+                        <a href="cart.html"><img src="./img/icon-basket.svg" alt="forma2" class="header__logo" width="32" height="29"></a>
+                        <button class="header__button"> </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="subheader">
+            <h2 class="subheader__name container">registration</h2> </section>
+        <section class="registration  container">
+            <h2 class="visually-hidden">Registration-field</h2>
+            <div class="registration__field container">
+                <div class="registration__field-item">
+                    <h3 class="registration__field-title">Your Name</h3>
+                    <input type="text" placeholder="First Name" name="user-first-name">
+                    <input type="text" placeholder="Last Name" name="user-second-name">
+                    <div class="registration__field-gender">
+                        <input type="radio" id="user-male" name="gender">
+                        <label class="registration__label" for="gender">&nbsp; &nbsp; Male</label>
+                        <input type="radio" id="user-female" name="gender">
+                        <label class="registration__label" for="gender">&nbsp; &nbsp; Female</label>
+                    </div>
+                    <h3 class="registration__field-title">Login details</h3>
+                    <input type="email" placeholder="Email" name="user-email">
+                    <input type="password" placeholder="Password" name="user-password">
+                    <h3 class="registration__notation"> Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</h3>
+                    <button class="registration__submit">join now</button>
+                </div>
+                <div class="registration__field-discribe">
+                    <h2 class="registration__field-discribe-title">loyalty has its perks</h2>
+                    <h3 class="registration__field-discribe-subtitle">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</h3>
+                    <ul class="registration__field-discribe-list">
+                        <li class="registration__field-discribe-perks">15% off welcome offer</li>
+                        <li class="registration__field-discribe-perks">Free shipping, returns and exchanges on all orders</li>
+                        <li class="registration__field-discribe-perks">$10 off a purchase on your birthday</li>
+                        <li class="registration__field-discribe-perks">Early access to products</li>
+                        <li class="registration__field-discribe-perks">Exclusive offers &amp; rewards</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__picture">
+            <ul class="footer__picture-item container">
+                <li class="footer__picture-item-first"> <img src="./img/subscribe-foto.svg" alt="foto" width="360" height="225"> </li>
+                <li class="footer__picture-item-second">
+                    <p class="footer__picture-item-second-subscribe"> subscribe </p>
+                    <p class="footer__picture-item-second-for">for our newletter and promotion</p>
+                    <form>
+                        <div class="footer__picture-block-email">
+                            <input type="text" placeholder="Enter Your Email">
+                            <input type="submit" value="Subscribe"> </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__last-line container">
+            <p class="footer__last-line-copyright"> &copy; 2021 Brand All Rights Reserved. </p>
+            <ul class="footer__last-line-icon">
+                <li>
+                    <a href="#"> <img src="./img/footer-first-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
+                </li>
+                <li>
+                    <a href="#"> <img src="./img/footer-second-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
+                </li>
+                <li>
+                    <a href="#"> <img src="./img/footer-third-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
+                </li>
+                <li>
+                    <a href="#"> <img src="./img/footer-forth-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
