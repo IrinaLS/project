@@ -1,0 +1,112 @@
+
+.fetured__title {
+    @include font(30px,36px,400);
+    padding-top: 97px;
+    margin: 0;
+    text-align: center;
+    color: #222222;
+    text-transform: capitalize;
+    &:hover {
+        opacity: .8;
+        color:$pink-color;
+    }
+}
+
+.fetured__text {
+    padding-top: 6px;
+    margin: 0;
+    @include font(14px,17px,400);
+    text-align: center;
+    color: #9F9F9F;
+}
+
+.fetured__list {
+    display: flex;
+    margin: 18px 0 0 0;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fetured__item {
+    display: flex;
+    margin-top: 30px;
+    width: 360px;
+    height: 581px;
+    font-family: 'Lato';
+    flex-direction: column;
+    background: #F8F8F8;
+    &:hover {
+        box-shadow: 0 0 5px 2px #FF6A6A
+    }
+    
+    & > a:nth-child(1) {
+        position: relative;
+        display: block;
+    }
+    
+    & > a:nth-child(1):before {
+        display: none;
+        content: '';
+        position: absolute;
+        width: 360px;
+        height: 420px;
+        top: 0;
+        left: 0;
+        background-image: url(../img/fetured-pic-2fon.svg);
+    }
+    
+    & > a:nth-child(1):hover:before {
+        display: block;
+        opacity: .8;
+    }
+}
+.fetured__item-title {
+    @include font(13px,16px,400);
+    padding: 25px 0 0 18px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    &:hover {
+        opacity: .8;
+        color:$pink-color;
+    }
+    &:active {
+        opacity: .5;
+    }
+}
+.fetured__item-text {
+    @include font(14px,17px,300);
+    padding: 12px 29px 0 18px;
+    margin: 0;
+    color: #5D5D5D;
+}
+
+.fetured__item-price {
+    @include font(16px,19px,400);
+    padding: 18px 0 0 18px;
+    color: $pink-color;
+    margin: 0;
+}
+
+.fetured__button-browse-all-product {
+    margin: 48px 0 96px 466px;
+    width: 211px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    color: #FF6A6A;
+    @include font(16px,19px,400);
+    outline: 1px solid #FF6A6A;
+    text-decoration: none;
+    padding-top: 15px;
+    font-family: 'Lato';
+    text-transform: capitalize;
+    &:hover {
+        box-shadow: 0 0 5px 2px #FF6A6A;
+    }
+    &:active {
+        opacity: .5;
+    }
+}

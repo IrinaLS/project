@@ -1,0 +1,37 @@
+.subheader{
+        background-color: #F8F3F4;
+        width: 1600px;
+        margin: 0 auto;
+
+
+    .subheader__name{
+        @include font(24px,29px,400);
+        color:$pink-color;
+        text-transform: uppercase;
+        height: 148px;
+        display: flex;
+        align-items: center;
+        }
+    .subheader__list {
+        @include flex-center-space-between ();
+        height: 148px;
+    }
+    .subheader__item {
+        @include flex-center-space-between ();
+        width: 211px;
+    }  
+    .subheader__item-name{				
+        text-decoration: none;
+        text-transform: uppercase;
+        @include font(14px,17px,300);
+        color: #636363;
+        } 
+        .subheader__item-name:hover{				
+        color:$pink-color;
+        }
+}
+
+  
+ 
+  
+  

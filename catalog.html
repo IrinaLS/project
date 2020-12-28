@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Catalog</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet"> </head>
@@ -27,55 +26,100 @@
                     </button>
                 </li>
                 <li class="header__menu-item">
-                    <button class="header__button"> <img src="./img/icon-personal-area.svg" alt="forma1" class="header__logo" width="29" height="29"> </button>
+                    <div>
+                        <a href="registration.html"><img src="./img/icon-personal-area.svg" alt="forma1" class="header__logo" width="29" height="29"> </a>
+                        <button class="header__button"> </button>
+                    </div>
                 </li>
                 <li class="header__menu-item">
-                    <button class="header__button"> <img src="./img/icon-basket.svg" alt="forma2" class="header__logo" width="32" height="29"> </button>
+                    <div>
+                        <a href="cart.html"><img src="./img/icon-basket.svg" alt="forma2" class="header__logo" width="32" height="29"></a>
+                        <button class="header__button"> </button>
+                    </div>
                 </li>
             </ul>
         </div>
     </header>
     <main>
+        <section class="subheader">
+            <div class="subheader__list container">
+                <h2 class="subheader__name">new arrivals</h2>
+                <ul class="subheader__item">
+                    <li> <a href="#" class="subheader__item-name">home &nbsp; &nbsp;/</a></li>
+                    <li> <a href="#" class="subheader__item-name">men &nbsp; &nbsp;/</a></li>
+                    <li> <a href="#" class="subheader__item-name">new  arrivals</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="filter">
+            <div class="filter__list container">
+                <h2 class="filter__name">filter</h2> <img src="./img/filter-lines.svg" alt="lines" class="filter__lines" width="15" height="10">
+                <ul class="filter__item">
+                    <li> <a href="#" class="filter__item-name">trending now &nbsp; &nbsp; 		
+		<img src="./img/filter-arrow.svg" alt="arrow" class="filter__arrow" width="11" height="5"></a></li>
+                    <li> <a href="#" class="filter__item-name"> size &nbsp; &nbsp;
+		<img src="./img/filter-arrow.svg" alt="arrow" class="filter__arrow" width="11" height="5"></a></li>
+                    <li> <a href="#" class="filter__item-name">price &nbsp; &nbsp;
+		<img src="./img/filter-arrow.svg" alt="arrow" class="filter__arrow" width="11" height="5"></a></li>
+                </ul>
+            </div>
+        </section>
         <section class="fetured container">
-            <h2 class="fetured__title">________________________</h2>
+            <h2 class="visually-hidden">catalog</h2>
             <ul class="fetured__list">
-                <li class="fetured__item"> <img class="fetured__item-pic" src="./img/fetured-pic-1.jpg" alt="first picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/fetured-pic-1.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
-                <li class="fetured__item"> <img class="fetured__item-pic-pink" src="./img/catalog-pic-2.svg" alt="second picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/catalog-pic-2.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
-                <li class="fetured__item"> <img class="fetured__item-pic" src="./img/fetured-pic-3.jpg" alt="third picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/fetured-pic-3.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
-                <li class="fetured__item"> <img class="fetured__item-pic" src="./img/fetured-pic-4.jpg" alt="forth picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/fetured-pic-4.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
-                <li class="fetured__item"> <img class="fetured__item-pic" src="./img/catalog-pic-5.jpg" alt="fifth picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/catalog-pic-5.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
-                <li class="fetured__item"> <img class="fetured__item-pic" src="./img/catalog-pic-6.jpg" alt="fifth picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/catalog-pic-6.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
-                <li class="fetured__item"> <img class="fetured__item-pic" src="./img/catalog-pic-7.jpg" alt="forth picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/catalog-pic-7.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
-                <li class="fetured__item"> <img class="fetured__item-pic" src="./img/catalog-pic-8.jpg" alt="fifth picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/catalog-pic-8.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
-                <li class="fetured__item"> <img class="fetured__item-pic" src="./img/catalog-pic-9.jpg" alt="fifth picture" width="360" height="420"> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
+                <li class="fetured__item">
+                    <a href="#" class="fetured__item-pic"><img src="./img/catalog-pic-9.jpg" alt="second picture" width="360" height="420"></a> <a href="#" class="fetured__item-title">ellery x m'o capsule</a>
                     <p class="fetured__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="fetured__item-price">$52.00</p>
                 </li>
             </ul>
+        </section>
+        <section class="paggination">
+            <h2 class="visually-hidden">paggination</h2>
+            <div>
+                <a href="#"> </a>
+                <button class="paggination__button"> </button>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -93,17 +137,23 @@
                 </li>
             </ul>
         </div>
-        <ul class="footer__last-line container">
-            <li class="footer__last-line-copyright">
-                <p> &copy; 2021 Brand All Rights Reserved. </p>
-            </li>
-            <li class="footer__last-line-icon">
-                <a href="#"> <img src="./img/footer-first-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
-                <a href="#"> <img src="./img/footer-second-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
-                <a href="#"> <img src="./img/footer-third-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
-                <a href="#"> <img src="./img/footer-forth-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
-            </li>
-        </ul>
+        <div class="footer__last-line container">
+            <p class="footer__last-line-copyright"> &copy; 2021 Brand All Rights Reserved. </p>
+            <ul class="footer__last-line-icon">
+                <li>
+                    <a href="#"> <img src="./img/footer-first-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
+                </li>
+                <li>
+                    <a href="#"> <img src="./img/footer-second-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
+                </li>
+                <li>
+                    <a href="#"> <img src="./img/footer-third-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
+                </li>
+                <li>
+                    <a href="#"> <img src="./img/footer-forth-icon.jpg" alt="icon-p" width="32" height="32" class="footer__last-line-img"> </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
