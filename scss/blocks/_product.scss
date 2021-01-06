@@ -1,0 +1,86 @@
+.product__card {
+    @include box-size (1600px, 1315px);
+    background-image: url(../img/product-pic.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 112px;
+    .product__card-arrow {
+        @include position(flex, center, space-between);
+        padding-top: 365px;
+        button[type="submit"] {
+            @include box-size (47px, 47px);
+            background-color: $grey-color6;
+            border: none;
+            outline: none;
+        }
+    }
+    .product__card-discribe {
+        @include box-size (1141px, 601px);
+        background-color: $white-color;
+        margin: 300px 0 0 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .product__card-discribe-title {
+            @include font (14px, 17px, 300, $pink-color);
+            text-transform: uppercase;
+            padding: 64px 0 12px 0;
+        }
+        hr {
+            border: none;
+            color: $pink-color;
+            @include box-size(63px, 3px);
+            align-items: center;
+            background-color: $pink-color;
+        }
+        .product__card-discribe-model {
+            @include font (18px, 22px, 300, $grey-color8);
+            text-transform: uppercase;
+            padding-top: 12px;
+        }
+        .product__card-discribe-text {
+            @include font (14px, 17px, 300, $grey-color8);
+            padding-top: 49px;
+            @include box-size (555px, 52px);
+            text-align: center;
+        }
+        .product__card-discribe-price {
+            @include font (24px, 29px, 300, $pink-color);
+            padding: 33px 0 65px 0;
+            width: 641px;
+            text-align: center;
+            border-bottom: 1px solid $grey-color6;
+        }
+        .product__card-menu {
+            display: flex;
+            justify-content: center;
+            padding-top: 65px;
+            .product__card-menu-item {
+                @include font (14px, 17px, 400, $grey-color3);
+                text-transform: uppercase;
+            }
+        }
+        button[type="submit"] {
+            @include box-size (211px, 47px);
+            background-color: $white-color;
+            border: 1px solid $pink-color;
+            outline: none;
+            @include font (16px, 19px, 400, $pink-color);
+            margin-top: 63px;
+            text-align: center;
+            &:hover {
+                background-color: $grey-color6;
+                color: $white-color;
+            }
+            &:active {
+                background-color: $grey-color6;
+                color: $black-color;
+            }
+        }
+    }
+}
+
+.clear-box {
+    @include box-size(1000px, 130px);
+    margin: 0 auto;
+}

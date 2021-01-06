@@ -1,72 +1,59 @@
-
 .name {
     display: flex;
     width: 1600px;
     margin: 0 auto;
-
-    .name__header-span-pink {
-        @include font(32px,32px,700);
-        color: $pink-color;
+    .name__pic {
+        @include box-size (800px, 765px);
+        .name__img {
+            @include box-size (800px, 765px);
         }
-    
-    .name__header-span {
-        @include font(32px,32px,700);
-        color: $black-color;
-        }
-    
-    .name__header {
-        @include font(48px,48px,900);
-        text-transform: uppercase;
-        }
-    
+    }
     .name__content {
-        width: 570px;
-        height: 430px;
-        padding: 335px 0 0 64px;
+        @include box-size(568px, 765px);
         background-color: $pink-background;
-        }
-    
+    }
     .name__header {
+        @include font(48px, 57px, 900, $black-color);
+        text-transform: uppercase;
         position: relative;
-        padding: 0 0 0 28px;
+        padding: 335px 0 0 92px;
         &::before {
             position: absolute;
             content: '';
             width: 12px;
-            height: 100%;
+            height: 93px;
             background-color: $pink-color;
-            left: -12px;
+            left: 64px;
+        }
+        .name__header-span {
+            @include font(32px, 38px, 700, $black-color);
+        }
+        .name__header-span-red {
+            color: $pink-color;
         }
     }
-    
-      
     .name__nav {
-        width: 228px;
-        height: 728px;
+        @include box-size(198px, 708px);
         background-color: $white-color;
         padding: 37px 0 0 34px;
         .name__nav-menu {
-            color: #000000;
             text-transform: uppercase;
-            @include font(14px,17px,700);     
+            @include font(14px, 17px, 700, $black-color1);
             &:hover {
-                color:$pink-color;
-            } 
+                color: $pink-color;
+            }
         }
-        
         .name__nav-list {
             padding: 14px 0 0 0;
         }
-        
         .name__nav-title {
             padding: 20px 0 0 0;
         }
-        
         .name__nav-title-link {
-            color:$pink-color;
             text-transform: uppercase;
-            @include font(14px,17px,400);  
-            text-decoration: none;  
+            @include font(14px, 17px, 400, $pink-color);
+            text-decoration: none;
+            outline: none;
             &:hover {
                 opacity: .3;
             }
@@ -74,30 +61,87 @@
                 opacity: .5;
             }
         }
-        
         .name__nav-submenu {
             padding: 0 0 0 21px;
         }
-        
         .name__nav-item {
             padding: 11px 0 0 0;
         }
-        
         .name__nav-item-link {
-            color: #6F6E6E;
-            @include font(14px,17px,300); 
+            @include font(14px, 17px, 300, $grey-color3);
             text-transform: capitalize;
-            text-decoration: none;   
+            text-decoration: none;
+            outline: none;
             &:hover {
                 opacity: .8;
             }
             &:active {
                 opacity: .5;
-            }    
+                color: $pink-color;
+            }
         }
-               
     }
-       
 }
 
+@media (max-width:$tablet-max) and (min-width:$tablet-min) {
+    .name {
+        width: 100%;
+        .name__pic {
+            @include box-size(50%, auto);
+            .name__img {
+                @include box-size(100%, auto);
+            }
+        }
+        .name__content {
+            @include box-size(50%, auto);
+        }
+        .name__header {
+            @include font(44px, 53px, 900, $black-color);
+            padding: 37% 0 0 18%;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 12px;
+                height: 92px;
+                background-color: $pink-color;
+                left: 40px;
+            }
+        }
+        .name__header-span {
+            @include font(24px, 29px, 700, $black-color);
+        }
+        .name__nav {
+            display: none;
+        }
+    }
+}
 
+@media (max-width:$phone-max) and (min-width:$phone-min) {
+    .name {
+        width: 100%;
+        .name__pic {
+            display: none;
+        }
+        .name__content {
+            @include box-size(100%, auto);
+        }
+        .name__header {
+            @include font(38px, 45px, 900, $black-color);
+            padding: 41% 0 35% 22%;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 12px;
+                height: 62px;
+                background-color: $pink-color;
+                left: 56px;
+            }
+        }
+        .name__header-span {
+            @include font(20px, 24px, 700, $black-color);
+        }
+        .name__nav {
+            display: none;
+        }
+    }
+}

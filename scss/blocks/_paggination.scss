@@ -1,19 +1,13 @@
 .paggination {
-    background-color: #FFFFFF;
-    width: 1600px;
-    height: 188px;
+    background-color: $white-color;
+    @include box-size(1600px, 188px);
+    @include position (flex, center, center);
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .paggination__button {
         display: block;
-        width: 284px;
-        height: 44px;
-        border: 1px solid #5D5D5D;
+        @include box-size(284px, 44px);
+        border: 1px solid $grey-color1;
         outline: none;
-        background-color: #FFFFFF;
-        }
+        background-color: $white-color;
     }
-   
-  
+}
