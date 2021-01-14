@@ -2,16 +2,15 @@
     background-color: $white-color4;
     width: 1600px;
     margin: 0 auto;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
     .subheader__name {
         @include font(24px, 29px, 400, $pink-color);
         text-transform: uppercase;
-        min-height: 148px;
-        display: flex;
-        align-items: center;
     }
     .subheader__list {
         @include position(flex, center, space-between);
-        min-height: 148px;
     }
     .subheader__item {
         @include position(flex, center, space-between);
@@ -25,5 +24,26 @@
     }
     .subheader__item-name:hover {
         color: $pink-color;
+    }
+}
+
+@media (max-width:$tablet-max) and (min-width:$tablet-min) {
+    .subheader {
+        width: 100%;
+    }
+}
+
+@media (max-width:$phone-max) and (min-width:$phone-min) {
+    .subheader {
+        width: 100%;
+        .subheader__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .subheader__name {
+            padding-bottom: 32px;
+            text-align: center;
+        }
     }
 }

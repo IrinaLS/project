@@ -1,6 +1,6 @@
 .registration__field {
     background-color: $white-color;
-    width: 1600px;
+    width: 100%;
     margin: 0 auto;
     padding: 64px 0 0 0;
     display: flex;
@@ -100,10 +100,65 @@
     }
     .registration__field-discribe-list {
         list-style-image: url(../img/registration-check.jpg);
+        padding-left: 40px;
     }
     .registration__field-discribe-perks {
         width: 650px;
         @include font(24px, 29px, 300, $black-color1);
         padding: 0 0 16px 0;
+    }
+}
+
+@media (max-width: 1599px) and (min-width: 768px) {
+    .registration__field {
+        width: 100%;
+        padding-top: 40px;
+        justify-content: space-between;
+    }
+    .registration__field-discribe {
+        width: 48%;
+        padding: 0;
+    }
+    .registration__field-discribe-title {
+        width: 100%;
+        @include font(16px, 19px, 300, $black-color1);
+    }
+    .registration__field-discribe-subtitle {
+        width: 100%;
+        @include font(16px, 19px, 300, $black-color1);
+        padding: 32px 0 22px 0;
+    }
+    .registration__field-discribe-perks {
+        width: 100%;
+        @include font(16px, 19px, 300, $black-color1);
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    .registration__field {
+        width: 100%;
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .registration__field-discribe {
+        width: 100%;
+        padding: 0 0 100px 0;
+    }
+    .registration__field-discribe .registration__field-discribe-title {
+        width: 100%;
+        @include font(16px, 19px, 300, $black-color1);
+    }
+    .registration__field-discribe .registration__field-discribe-subtitle {
+        width: 100%;
+        @include font(16px, 19px, 300, $black-color1);
+        padding: 32px 0 22px 0;
+    }
+    .registration__field-discribe .registration__field-discribe-perks {
+        width: 100%;
+        @include font(16px, 19px, 300, $black-color1);
+    }
+    .registration__submit {
+        margin-bottom: 40px;
     }
 }

@@ -26,7 +26,7 @@
                     display: flex;
                     justify-content: center;
                 }
-                input[type="text"] {
+                input[type="email"] {
                     @include box-size(203px, 49px);
                     background-color: $white-color3;
                     border-radius: 23px 0 0 23px;
@@ -125,11 +125,14 @@
         }
         .footer__last-line {
             width: 100%;
-            min-height: 103px;
+            min-height: 143px;
             @include position(flex, center, center);
             flex-direction: column-reverse;
             .footer__last-line-icon {
-                padding-bottom: 40px;
+                padding: 43px 0 40px 0;
+            }
+            .footer__last-line-copyright {
+                padding: 0 0 9px 0;
             }
         }
     }

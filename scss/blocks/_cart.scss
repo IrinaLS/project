@@ -2,7 +2,8 @@
     @include position (flex, flex-start, space-between);
     margin-top: 96px;
     .cart__cards-list {
-        @include box-size (653px, 653px);
+        @include box-size (653px, 685px);
+        padding-bottom: 32px;
         .cart__cards-item {
             @include position (flex, flex-start, start);
             box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
@@ -25,7 +26,7 @@
                     color: $pink-color1;
                 }
             }
-            input[type="text"] {
+            input[type="number"] {
                 @include box-size (44px, 25px);
                 outline: 1px solid $grey-color6;
                 border: none;
@@ -140,7 +141,7 @@
 .cart__cards-submit {
     @include box-size (653px, 54px);
     @include position (flex, center, space-between);
-    margin: 32px 0 128px 0;
+    margin-bottom: 128px;
     button[type="submit"] {
         @include box-size (235px, 50px);
         background-color: $white-color;
@@ -156,5 +157,99 @@
         &:hover {
             color: $pink-color;
         }
+    }
+}
+
+@media (max-width:$tablet-max) and (min-width:$tablet-min) {
+    .cart__cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 59px;
+        width: 100%;
+    }
+    .cart__cards-list {
+        width: 735px;
+        padding-bottom: 22px;
+    }
+    .cart__cards-item {
+        justify-content: center;
+    }
+    .cart__cards-item-discribe {
+        width: 400px;
+    }
+    .cart__cards-submit {
+        margin-bottom: 64px;
+        width: 735px;
+    }
+    .cart__cards .cart__shipping-adress {
+        @include box-size (100%, 270px);
+        @include position (flex, flex-start, space-between);
+        margin-bottom: 130px;
+    }
+    .cart__cards .cart__shipping-adress .cart__shipping-sum {
+        margin-top: 38px;
+    }
+}
+
+@media (max-width:$phone-max) and (min-width:$phone-min) {
+    .cart__cards {
+        @include position (flex, center, center);
+        flex-direction: column;
+        margin-top: 39px;
+    }
+    .cart__cards-users {
+        width: 100%;
+    }
+    .cart__cards-list {
+        @include box-size (100%, auto);
+        padding: 0;
+    }
+    .cart__cards-item {
+        margin-bottom: 32px;
+        @include box-size (100%, auto);
+        justify-content: center;
+    }
+    .cart__cards-pic {
+        @include box-size (40%, auto);
+    }
+    .cart__cards-item-discribe {
+        @include box-size (53%, auto);
+        padding: 13px 0 0 17px;
+    }
+    .cart__cards-item-title {
+        @include font (16px, 19px, 400, $black-color);
+        @include box-size (135px, 36px);
+        padding-bottom: 26px;
+    }
+    .cart__cards-item-feature {
+        @include font (14px, 17px, 400, $grey-color5);
+        text-transform: capitalize;
+        padding-bottom: 4px;
+    }
+    .cart__cards-item input[type=number] {
+        @include box-size (24px, 15px);
+        @include font (10px, 12px, 400, $grey-color5);
+    }
+    .cart__cards-item-form {
+        @include font (14px, 17px, 400, $grey-color5);
+    }
+    .cart__cards-close {
+        padding: 17px 0 0 0;
+        @include box-size (7%, auto);
+    }
+    .cart__cards-submit {
+        margin-bottom: 58px;
+        width: 100%;
+    }
+    .cart__cards-submit button[type=submit] {
+        @include box-size (175px, 33px);
+        @include font (12px, 14px, 400, $black-color);
+    }
+    .cart__shipping-adress {
+        @include box-size (100%, 540px);
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 96px;
     }
 }
