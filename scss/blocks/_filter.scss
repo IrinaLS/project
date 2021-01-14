@@ -5,7 +5,10 @@
     .filter__list {
         display: flex;
         justify-content: start;
-        padding: 51px 0 16px 0;
+        padding: 51px 0 8px 0;
+    }
+    .filter__menu {
+        @include position(flex, flex-start, flex-start);
     }
     .filter__name {
         @include font(14px, 17px, 600, $black-color1);
@@ -18,8 +21,9 @@
     }
     .filter__item {
         @include position(flex, center, space-between);
-        padding: 0 0 0 320px;
+        padding: 0 0 0 290px;
         .filter__item-name {
+            padding: 0 0 0 28px;
             text-decoration: none;
             text-transform: uppercase;
             @include font(14px, 17px, 300, $grey-color2);
@@ -29,7 +33,43 @@
             }
         }
     }
-    .filter__arrow {
-        padding: 0 28px 0 0;
+}
+
+@media (max-width:$tablet-max) and (min-width:$tablet-min) {
+    .filter {
+        width: 100%;
+        .filter__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 24px 0 10px 0;
+        }
+        .filter__item {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width:$phone-max) and (min-width:$phone-min) {
+    .filter {
+        width: 100%;
+        .filter__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 24px 0 10px 0;
+        }
+        .filter__item {
+            padding: 0;
+        }
+        .filter__name {
+            display: none;
+        }
+        .filter__lines {
+            @include box-size(38px, 25px);
+        }
+        .filter__item-name {
+            @include font(12px, 14px, 300, $grey-color2);
+        }
     }
 }

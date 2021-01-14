@@ -44,23 +44,23 @@
         <section class="subheader">
             <h2 class="subheader__name container">registration</h2> </section>
         <section class="registration  container">
-            <h2 class="visually-hidden">Registration-field</h2>
-            <div class="registration__field container">
+            <div class="registration__field">
+                <h2 class="visually-hidden">Registration-field</h2>
                 <div class="registration__field-item">
                     <h3 class="registration__field-title">Your Name</h3>
                     <input type="text" placeholder="First Name" name="user-first-name">
                     <input type="text" placeholder="Last Name" name="user-second-name">
                     <div class="registration__field-gender">
-                        <input type="radio" id="user-male" name="gender">
+                        <input type="radio" id="user-male" name="gender" value="male">
                         <label class="registration__label" for="user-male">&nbsp; &nbsp; Male</label>
-                        <input type="radio" id="user-female" name="gender">
+                        <input type="radio" id="user-female" name="gender" value="female">
                         <label class="registration__label" for="user-female">&nbsp; &nbsp; Female</label>
                     </div>
                     <h3 class="registration__field-title">Login details</h3>
                     <input type="email" placeholder="Email" name="user-email">
                     <input type="password" placeholder="Password" name="user-password">
                     <h3 class="registration__notation"> Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</h3>
-                    <button class="registration__submit">join now</button>
+                    <button class="registration__submit" type="submit">join now</button>
                 </div>
                 <div class="registration__field-discribe">
                     <h2 class="registration__field-discribe-title">loyalty has its perks</h2>
@@ -83,7 +83,7 @@
                     <p class="footer__picture-subscribe-text"> subscribe </p>
                     <p class="footer__picture-subscribe-for">for our newletter and promotion</p>
                     <form class="footer__picture-block-email">
-                        <input type="text" placeholder="Enter Your Email">
+                        <input type="email" placeholder="Enter Your Email">
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>

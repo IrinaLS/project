@@ -1,23 +1,4 @@
-.fetured__title {
-    @include font(30px, 36px, 400, $black-color);
-    padding-top: 97px;
-    margin: 0;
-    text-align: center;
-    text-transform: capitalize;
-    &:hover {
-        opacity: .8;
-        color: $pink-color;
-    }
-}
-
-.fetured__text {
-    padding-top: 6px;
-    margin: 0;
-    @include font(14px, 17px, 400, $grey-color);
-    text-align: center;
-}
-
-.fetured__list {
+.catalog__list {
     display: flex;
     margin: 18px 0 0 0;
     padding: 0;
@@ -25,7 +6,7 @@
     flex-wrap: wrap;
 }
 
-.fetured__item {
+.catalog__item {
     display: flex;
     margin-top: 30px;
     @include box-size(360px, 581px);
@@ -54,11 +35,11 @@
     }
 }
 
-.fetured__item-pic {
+.catalog__item-pic {
     outline: none;
 }
 
-.fetured__item-title {
+.catalog__item-title {
     @include font(13px, 16px, 400, $black-color1);
     padding: 25px 0 0 18px;
     margin: 0;
@@ -74,78 +55,44 @@
     }
 }
 
-.fetured__item-text {
+.catalog__item-text {
     @include font(14px, 17px, 300, $grey-color1);
     padding: 12px 29px 0 18px;
     margin: 0;
 }
 
-.fetured__item-price {
+.catalog__item-price {
     @include font(16px, 19px, 400, $pink-color);
     padding: 18px 0 0 18px;
     margin: 0;
 }
 
-.fetured__button {
-    @include box-size(100%, 191px);
-    @include position(flex, center, center);
-    .fetured__button-browse-all-product {
-        @include box-size(211px, 32px);
-        @include font(16px, 19px, 400, $pink-color1);
-        outline: 1px solid $pink-color1;
-        text-align: center;
-        text-transform: capitalize;
-        text-decoration: none;
-        padding-top: 15px;
-        &:hover {
-            box-shadow: 0 0 5px 2px $pink-color1;
-        }
-        &:active {
-            opacity: .5;
-            color: $grey-color;
-            background-color: $pink-color1;
-        }
-    }
-}
-
 @media (max-width:$tablet-max) and (min-width:$tablet-min) {
-    .fetured__title {
-        padding-top: 155px;
-    }
-    .fetured__text {
-        padding-top: 4px;
-    }
-    .fetured__list {
-        margin-top: 57px;
+    .catalog__list {
+        margin-top: 32px;
         width: 100%;
         justify-content: space-around;
     }
-    .fetured__item {
+    .catalog__item {
         margin: 16px 0 0 0;
     }
-    .fetured__button {
-        @include box-size(100%, 145px);
+    .catalog__item:nth-child(3) {
+        display: none;
     }
 }
 
 @media (max-width:$phone-max) and (min-width:$phone-min) {
-    .fetured__title {
-        padding-top: 64px;
-    }
-    .fetured__text {
-        padding-top: 3px;
-    }
-    .fetured__list {
-        margin: 65px 0 0 0;
+    .catalog__list {
+        margin-top: 65px;
         padding: 0;
         width: 100%;
         justify-content: center;
     }
-    .fetured__item {
+    .catalog__item {
         margin: 0 0 17px 0;
         padding: 0;
     }
-    .fetured__button {
-        @include box-size(100%, 185px);
+    .catalog__item:nth-child(3) {
+        display: none;
     }
 }
