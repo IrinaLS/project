@@ -2,9 +2,11 @@
     background-color: $black-color;
     width: 1600px;
     margin: 0 auto;
+
     .advantages__action {
         @include position (flex, center, space-around);
     }
+
     .advantages__picture {
         display: flex;
         justify-content: center;
@@ -17,6 +19,7 @@
             opacity: .7;
         }
     }
+
     .advantages__title {
         display: flex;
         justify-content: center;
@@ -33,6 +36,7 @@
             color: $pink-color;
         }
     }
+
     .advantages__descride {
         display: flex;
         justify-content: center;
@@ -54,15 +58,19 @@
 @media (max-width:$tablet-max) and (min-width:$tablet-min) {
     .advantages {
         width: 100%;
+
         .advantages__action {
             flex-direction: column;
             padding-bottom: 64px;
+
             .advantages__picture {
                 padding: 48px 0 0 0;
             }
+
             .advantages__title {
                 padding: 28px 0 0 0;
             }
+
             .advantages__descride {
                 padding: 16px 0 0 0;
             }
@@ -73,15 +81,19 @@
 @media (max-width:$phone-max) and (min-width:$phone-min) {
     .advantages {
         width: 100%;
+
         .advantages__action {
             flex-direction: column;
             padding-bottom: 81px;
+
             .advantages__picture {
                 padding: 48px 0 0 0;
             }
+
             .advantages__title {
                 padding: 28px 0 0 0;
             }
+            
             .advantages__descride {
                 padding: 16px 0 0 0;
             }

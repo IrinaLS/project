@@ -1882,20 +1882,129 @@ ul {
   margin: 0 auto;
 }
 
+.product__cart-list {
+  display: flex;
+  margin: 18px 0 0 0;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product__cart-item {
+  display: flex;
+  margin-top: 30px;
+  width: 360px;
+  min-height: 581px;
+  font-family: "Lato";
+  flex-direction: column;
+  background: #F8F8F8;
+}
+.product__cart-item:hover {
+  box-shadow: 0 0 5px 2px #FF6A6A;
+}
+.product__cart-item > a:nth-child(1) {
+  position: relative;
+  display: block;
+}
+.product__cart-item > a:nth-child(1):before {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 360px;
+  min-height: 420px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/fetured-pic-2fon.svg);
+}
+.product__cart-item > a:nth-child(1):hover:before {
+  display: block;
+  opacity: 0.8;
+}
+
+.product__cart-item-pic {
+  outline: none;
+}
+
+.product__cart-item-title {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Lato";
+  line-height: 16px;
+  color: #000000;
+  padding: 25px 0 0 18px;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+}
+.product__cart-item-title:hover {
+  opacity: 0.8;
+  color: #F16D7F;
+}
+.product__cart-item-title:active {
+  opacity: 0.5;
+}
+
+.product__cart-item-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Lato";
+  line-height: 17px;
+  color: #5D5D5D;
+  padding: 12px 29px 0 18px;
+  margin: 0;
+}
+
+.product__cart-item-price {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Lato";
+  line-height: 19px;
+  color: #F16D7F;
+  padding: 18px 0 0 18px;
+  margin: 0;
+}
+
 @media (max-width: 1599px) and (min-width: 768px) {
   .product__card {
     width: 100%;
     min-height: 1225px;
   }
 
-  .product__card .product__card-arrow {
-    min-height: 624px;
-    background-size: 61% auto;
+  .product__cart-list {
+    display: flex;
+    justify-content: space-around;
   }
 
   .product__card .product__card-discribe {
     width: 100%;
     margin: 0;
+  }
+
+  .product__cart-item:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 767px) and (min-width: 375px) {
+  .product__card {
+    width: 100%;
+    min-height: 1225px;
+  }
+
+  .product__cart-list {
+    justify-content: center;
+  }
+
+  .product__card .product__card-discribe {
+    width: 100%;
+    margin: 0;
+  }
+
+  .product__cart-item:nth-child(2) {
+    display: none;
   }
 }
 .catalog__list {
