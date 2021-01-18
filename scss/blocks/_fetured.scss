@@ -4,6 +4,7 @@
     margin: 0;
     text-align: center;
     text-transform: capitalize;
+
     &:hover {
         opacity: .8;
         color: $pink-color;
@@ -32,14 +33,17 @@
     font-family: 'Lato';
     flex-direction: column;
     background: $white-color2;
+
     &:hover {
         box-shadow: 0 0 5px 2px $pink-color1;
     }
-    & > a:nth-child(1) {
+
+    &>a:nth-child(1) {
         position: relative;
         display: block;
     }
-    & > a:nth-child(1):before {
+
+    &>a:nth-child(1):before {
         display: none;
         content: '';
         position: absolute;
@@ -48,7 +52,8 @@
         left: 0;
         background-image: url(../img/fetured-pic-2fon.svg);
     }
-    & > a:nth-child(1):hover:before {
+
+    &>a:nth-child(1):hover:before {
         display: block;
         opacity: .8;
     }
@@ -65,10 +70,12 @@
     text-transform: uppercase;
     text-decoration: none;
     outline: none;
+
     &:hover {
         opacity: .8;
         color: $pink-color;
     }
+
     &:active {
         opacity: .5;
     }
@@ -89,6 +96,7 @@
 .fetured__button {
     @include box-size(100%, 191px);
     @include position(flex, center, center);
+
     .fetured__button-browse-all-product {
         @include box-size(211px, 32px);
         @include font(16px, 19px, 400, $pink-color1);
@@ -97,9 +105,11 @@
         text-transform: capitalize;
         text-decoration: none;
         padding-top: 15px;
+
         &:hover {
             box-shadow: 0 0 5px 2px $pink-color1;
         }
+
         &:active {
             opacity: .5;
             color: $grey-color;
@@ -112,17 +122,21 @@
     .fetured__title {
         padding-top: 155px;
     }
+
     .fetured__text {
         padding-top: 4px;
     }
+
     .fetured__list {
         margin-top: 57px;
         width: 100%;
         justify-content: space-around;
     }
+
     .fetured__item {
         margin: 16px 0 0 0;
     }
+
     .fetured__button {
         @include box-size(100%, 145px);
     }
@@ -132,19 +146,23 @@
     .fetured__title {
         padding-top: 64px;
     }
+
     .fetured__text {
         padding-top: 3px;
     }
+
     .fetured__list {
         margin: 65px 0 0 0;
         padding: 0;
         width: 100%;
         justify-content: center;
     }
+
     .fetured__item {
         margin: 0 0 17px 0;
         padding: 0;
     }
+
     .fetured__button {
         @include box-size(100%, 185px);
     }

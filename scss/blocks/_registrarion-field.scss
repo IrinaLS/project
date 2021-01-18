@@ -5,17 +5,21 @@
     padding: 64px 0 0 0;
     display: flex;
     justify-content: start;
+
     .registration__field-item {
         width: 365px;
     }
+
     .registration__field-title {
         @include font(16px, 19px, 300, $grey-color4);
         padding: 0 0 20px 0;
         text-transform: capitalize;
     }
+
     .registration__field-gender {
         margin: 33px 0 35px 0;
     }
+
     input[type="text"] {
         @include box-size(340px, 45px);
         background-color: $white-color;
@@ -26,10 +30,12 @@
         padding: 0 0 0 16px;
         margin: 0 0 20px 0;
         display: block;
+
         &:hover {
             background-color: $pink-color;
         }
     }
+
     input[type="email"] {
         @include box-size(340px, 45px);
         background-color: $white-color;
@@ -40,10 +46,12 @@
         padding: 0 0 0 16px;
         margin: 0 0 20px 0;
         display: block;
+
         &:hover {
             background-color: $pink-color;
         }
     }
+
     input[type="password"] {
         @include box-size(340px, 45px);
         background-color: $white-color;
@@ -54,6 +62,7 @@
         padding: 0 0 0 16px;
         margin: 0 0 20px 0;
         display: block;
+
         &:hover {
             background-color: $pink-color;
         }
@@ -80,6 +89,7 @@
     border: none;
     outline: none;
     text-transform: uppercase;
+
     &:hover {
         color: $black-color1;
     }
@@ -88,20 +98,24 @@
 .registration__field-discribe {
     width: 650px;
     padding: 0 0 0 128px;
+
     .registration__field-discribe-title {
         width: 650px;
         @include font(24px, 29px, 300, $black-color1);
         text-transform: uppercase;
     }
+
     .registration__field-discribe-subtitle {
         width: 650px;
         @include font(24px, 29px, 300, $black-color1);
         padding: 22px 0 21px 0;
     }
+
     .registration__field-discribe-list {
         list-style-image: url(../img/registration-check.jpg);
         padding-left: 40px;
     }
+
     .registration__field-discribe-perks {
         width: 650px;
         @include font(24px, 29px, 300, $black-color1);
@@ -115,19 +129,23 @@
         padding-top: 40px;
         justify-content: space-between;
     }
+
     .registration__field-discribe {
         width: 48%;
         padding: 0;
     }
+
     .registration__field-discribe-title {
         width: 100%;
         @include font(16px, 19px, 300, $black-color1);
     }
+
     .registration__field-discribe-subtitle {
         width: 100%;
         @include font(16px, 19px, 300, $black-color1);
         padding: 32px 0 22px 0;
     }
+
     .registration__field-discribe-perks {
         width: 100%;
         @include font(16px, 19px, 300, $black-color1);
@@ -141,23 +159,28 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
     .registration__field-discribe {
         width: 100%;
         padding: 0 0 100px 0;
     }
+
     .registration__field-discribe .registration__field-discribe-title {
         width: 100%;
         @include font(16px, 19px, 300, $black-color1);
     }
+
     .registration__field-discribe .registration__field-discribe-subtitle {
         width: 100%;
         @include font(16px, 19px, 300, $black-color1);
         padding: 32px 0 22px 0;
     }
+
     .registration__field-discribe .registration__field-discribe-perks {
         width: 100%;
         @include font(16px, 19px, 300, $black-color1);
     }
+
     .registration__submit {
         margin-bottom: 40px;
     }

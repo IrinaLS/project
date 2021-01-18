@@ -3,6 +3,7 @@
     @include box-size(1600px, 188px);
     @include position (flex, center, center);
     margin: 0 auto;
+
     .paggination__box {
         @include box-size(284px, 44px);
         border: 1px solid $grey-color9;
@@ -10,21 +11,25 @@
         background-color: $white-color;
         display: flex;
         align-items: center;
+
         .paggination__list {
             @include position(flex, center, space-between);
             padding: 0 16px 0 16px;
             width: 100%;
         }
+
         .paggination__item-button {
             background-color: transparent;
             border: none;
             outline: none;
             padding: 0;
         }
+
         .paggination__item {
             @include font(16px, 19px, 300, $grey-color4);
             text-decoration: none;
         }
+
         .paggination__item:nth-child(2) {
             color: $pink-color2;
         }
