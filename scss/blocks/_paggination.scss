@@ -23,11 +23,20 @@
             border: none;
             outline: none;
             padding: 0;
+
+            &:hover {
+                transform: scale(2);
+            }
         }
 
         .paggination__item {
             @include font(16px, 19px, 300, $grey-color4);
             text-decoration: none;
+
+            &:hover {
+                color:$pink-color;
+                font-weight: 700;
+            }
         }
 
         .paggination__item:nth-child(2) {

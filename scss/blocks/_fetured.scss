@@ -6,8 +6,7 @@
     text-transform: capitalize;
 
     &:hover {
-        opacity: .8;
-        color: $pink-color;
+        animation: tracking-in-expand 1 2s;
     }
 }
 
@@ -33,10 +32,6 @@
     font-family: 'Lato';
     flex-direction: column;
     background: $white-color2;
-
-    &:hover {
-        box-shadow: 0 0 5px 2px $pink-color1;
-    }
 
     &>a:nth-child(1) {
         position: relative;
@@ -104,15 +99,21 @@
         text-align: center;
         text-transform: capitalize;
         text-decoration: none;
-        padding-top: 15px;
+        padding: 15px 0 14px 0;
 
         &:hover {
-            box-shadow: 0 0 5px 2px $pink-color1;
+            animation-duration: 2s;
+            animation-name: changecolor;
+            border-radius: 30px;
+            outline: none;
+            color: $black-color;
+            font-weight: 700;
+
         }
 
         &:active {
-            opacity: .5;
-            color: $grey-color;
+            opacity: 0.5;
+            color: $white-color;
             background-color: $pink-color1;
         }
     }

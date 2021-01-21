@@ -64,20 +64,75 @@
         <section class="filter">
             <h2 class="visually-hidden">filter</h2>
             <div class="filter__list container">
-                <nav class="filter__menu">
-                    <h3 class="filter__name">filter</h3> <img src="./img/filter-lines.svg" alt="lines"
-                        class="filter__lines" width="15" height="10">
-                </nav>
+                <div class="filter__menu">
+                    <div class="filter__menu-name">
+                        <button class="filter__button" type="button"> filter</button>
+                        <img src="./img/filter-lines.svg" alt="lines" class="filter__lines" width="15" height="10">
+                    </div>
+                    <ul class="filter__menu-list">
+                        <li><a href="#" class="filter__menu-list-item-link">category</a>
+
+                            <ul class="filter__submenu-list">
+                                <li><a href="#" class="filter__submenu-list-item-link">accessories</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">bags</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">denim</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">hoodies &amp; sweatshirts</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">jackets &amp; coats</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">polos</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">shirts</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">shoes</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">sweaters &amp; knits</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">t-shirts</a>
+                                <li><a href="#" class="filter__submenu-list-item-link">tanks</a>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="filter__menu-list-item-link">brand</a></li>
+                        <li><a href="#" class="filter__menu-list-item-link">designer</a></li>
+                    </ul>
+                </div>
                 <ul class="filter__item">
-                    <li> <a href="#" class="filter__item-name">trending now &nbsp; &nbsp;
+                    <li class="filter__item-link">
+                        <button class="filter__item-name" type="button">trending now &nbsp; &nbsp;
                             <img src="./img/filter-arrow.svg" alt="arrow" class="filter__arrow" width="11"
-                                height="5"></a></li>
-                    <li> <a href="#" class="filter__item-name"> size &nbsp; &nbsp;
-                            <img src="./img/filter-arrow.svg" alt="arrow" class="filter__arrow" width="11"
-                                height="5"></a></li>
-                    <li> <a href="#" class="filter__item-name">price &nbsp; &nbsp;
-                            <img src="./img/filter-arrow.svg" alt="arrow" class="filter__arrow" width="11"
-                                height="5"></a></li>
+                                height="5"></button>
+                        <div class="filter__item-name-submenu">
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="first">
+                                first</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="second">
+                                second</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="third">
+                                third</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands"
+                                    value="another">another</label>
+                        </div>
+                    </li>
+                    <li class="filter__item-link">
+                        <button class="filter__item-name" type="button"> size &nbsp; &nbsp;
+                            <img src="./img/filter-arrow.svg" alt="arrow" class="filter__arrow" width="11" height="5">
+                        </button>
+                        <div class="filter__item-name-submenu">
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="xs">
+                                xs</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="s"> s</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="m"> m</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="l"> l</label>
+                        </div>
+                    </li>
+                    <li class="filter__item-link">
+                        <button class="filter__item-name" type="button"> price &nbsp; &nbsp;
+                            <img src="./img/filter-arrow.svg" alt="arrow" class="filter__arrow" width="11" height="5">
+                        </button>
+                        <div class="filter__item-name-submenu">
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="10">
+                                $10</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="20">
+                                $20</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="30">
+                                $30</label>
+                            <label class="filter__item-choose"><input type="checkbox" name="brands" value="40">
+                                $40</label>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>

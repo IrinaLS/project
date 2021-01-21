@@ -71,6 +71,9 @@
             .product__card-menu-item {
                 @include font (14px, 17px, 400, $grey-color3);
                 text-transform: uppercase;
+                &:hover{
+                    color: $pink-color;
+                }
             }
         }
 
@@ -84,8 +87,7 @@
             text-align: center;
 
             &:hover {
-                background-color: $grey-color6;
-                color: $white-color;
+                border-radius: 30px;
             }
 
             &:active {
@@ -97,7 +99,7 @@
 }
 
 .clear-box {
-    @include box-size(1000px, 130px);
+    @include box-size(100px, 130px);
     margin: 0 auto;
 }
 
@@ -116,10 +118,6 @@
     font-family: 'Lato';
     flex-direction: column;
     background: $white-color2;
-
-    &:hover {
-        box-shadow: 0 0 5px 2px $pink-color1;
-    }
 
     &>a:nth-child(1) {
         position: relative;

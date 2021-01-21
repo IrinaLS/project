@@ -45,12 +45,9 @@
                     padding: 0 0 0 30px;
 
                     &:hover {
-                        background-color: $pink-color;
+                        background-color: $white-color;
+                        color: $pink-color;
                     }
-                }
-
-                &:active {
-                    color: $pink-color;
                 }
 
                 button[type="submit"] {
@@ -64,7 +61,10 @@
                     @include font(14px, 16px, 400, $white-color);
 
                     &:hover {
-                        color: $black-color;
+                        color:$black-color;
+                        background-color:$pink-color2;
+                        transition: background-color 3s;
+                        font-weight: 700;
                     }
                 }
             }
@@ -85,11 +85,10 @@
             padding: 0 0 0 3px;
             outline: none;
 
-            &:hover {
-                outline: 2px solid $pink-color;
+            &>img:hover {
+                transform: scale(1.5);    
             }
         }
-
         .footer__last-line-icon {
             @include position(flex, center, space-between);
         }
