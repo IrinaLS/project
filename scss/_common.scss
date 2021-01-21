@@ -84,3 +84,56 @@ ul {
         width: 92%;
     }
 }
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+        color: $pink-color;
+        font-weight: 700;
+    }
+
+    40% {
+        opacity: 0.6;
+        color: $pink-color;
+        font-weight: 700;
+    }
+
+    100% {
+        opacity: 1;
+        color: $pink-color;
+        font-weight: 700;
+    }
+}
+
+@keyframes changecolor {
+    from {
+        background-color: $white-color;
+    }
+
+    to {
+        background-color: $pink-color1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}

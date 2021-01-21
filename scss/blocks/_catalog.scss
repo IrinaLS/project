@@ -13,9 +13,7 @@
     font-family: 'Lato';
     flex-direction: column;
     background: $white-color2;
-    &:hover {
-        box-shadow: 0 0 5px 2px $pink-color1;
-    }
+    
     & > a:nth-child(1) {
         position: relative;
         display: block;

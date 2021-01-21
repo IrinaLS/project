@@ -9,6 +9,7 @@
     .subheader__name {
         @include font(24px, 29px, 400, $pink-color);
         text-transform: uppercase;
+        animation: text-focus-in 1 1s;
     }
 
     .subheader__list {
