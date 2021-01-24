@@ -62,7 +62,6 @@
     &:hover {
         color: $pink-color;
         font-weight: 700;
-
     }
 }
 
@@ -144,6 +143,7 @@
             @include font(24px, 29px, 700, $black-color);
         }
     }
+
     .name:hover>.name__nav {
         display: none;
     }
@@ -183,6 +183,7 @@
             @include font(20px, 24px, 700, $black-color);
         }
     }
+
     .name:hover>.name__nav {
         display: none;
     }

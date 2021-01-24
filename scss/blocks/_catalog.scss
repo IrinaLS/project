@@ -13,12 +13,13 @@
     font-family: 'Lato';
     flex-direction: column;
     background: $white-color2;
-    
-    & > a:nth-child(1) {
+
+    &>a:nth-child(1) {
         position: relative;
         display: block;
     }
-    & > a:nth-child(1):before {
+
+    &>a:nth-child(1):before {
         display: none;
         content: '';
         position: absolute;
@@ -27,7 +28,8 @@
         left: 0;
         background-image: url(../img/fetured-pic-2fon.svg);
     }
-    & > a:nth-child(1):hover:before {
+
+    &>a:nth-child(1):hover:before {
         display: block;
         opacity: .8;
     }
@@ -44,10 +46,12 @@
     text-transform: uppercase;
     text-decoration: none;
     outline: none;
+
     &:hover {
         opacity: .8;
         color: $pink-color;
     }
+
     &:active {
         opacity: .5;
     }
@@ -71,9 +75,11 @@
         width: 100%;
         justify-content: space-around;
     }
+
     .catalog__item {
         margin: 16px 0 0 0;
     }
+
     .catalog__item:nth-child(3) {
         display: none;
     }
@@ -86,10 +92,12 @@
         width: 100%;
         justify-content: center;
     }
+
     .catalog__item {
         margin: 0 0 17px 0;
         padding: 0;
     }
+
     .catalog__item:nth-child(3) {
         display: none;
     }
