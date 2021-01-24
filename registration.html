@@ -56,24 +56,27 @@
         </section>
         <section class="registration  container">
             <div class="registration__field">
-                <h2 class="visually-hidden">Registration-field</h2>
-                <div class="registration__field-item">
-                    <h3 class="registration__field-title">Your Name</h3>
-                    <input type="text" placeholder="First Name" name="user-first-name">
-                    <input type="text" placeholder="Last Name" name="user-second-name">
-                    <div class="registration__field-gender">
-                        <input type="radio" id="user-male" name="gender" value="male">
-                        <label class="registration__label" for="user-male">&nbsp; &nbsp; Male</label>
-                        <input type="radio" id="user-female" name="gender" value="female">
-                        <label class="registration__label" for="user-female">&nbsp; &nbsp; Female</label>
-                    </div>
-                    <h3 class="registration__field-title">Login details</h3>
-                    <input type="email" placeholder="Email" name="user-email">
-                    <input type="password" placeholder="Password" name="user-password">
-                    <h3 class="registration__notation"> Please use 8 or more characters, with at least 1 number and a
-                        mixture of uppercase and lowercase letters</h3>
-                    <button class="registration__submit" type="submit">join now</button>
-                </div>
+                <h2 class="visually-hidden">registration-field</h2>
+                <form class="registration__field-item">
+                    <fieldset>
+                        <legend class="registration__field-title">Your Name</legend>
+                        <input type="text" placeholder="First Name" name="user-first-name">
+                        <input type="text" placeholder="Last Name" name="user-second-name">
+                        <div class="registration__field-gender">
+                            <input type="radio" id="user-male" name="gender" value="male">
+                            <label class="registration__label" for="user-male">&nbsp; &nbsp; Male</label>
+                            <input type="radio" id="user-female" name="gender" value="female">
+                            <label class="registration__label" for="user-female">&nbsp; &nbsp; Female</label>
+                        </div>
+                        <h3 class="registration__field-title">Login details</h3>
+                        <input type="email" placeholder="Email" name="user-email">
+                        <input type="password" placeholder="Password" name="user-password">
+                        <h3 class="registration__notation"> Please use 8 or more characters, with at least 1 number and
+                            a
+                            mixture of uppercase and lowercase letters</h3>
+                        <button class="registration__submit" type="submit">join now</button>
+                    </fieldset>
+                </form>
                 <div class="registration__field-discribe">
                     <h2 class="registration__field-discribe-title">loyalty has its perks</h2>
                     <h3 class="registration__field-discribe-subtitle">Get in on the loyalty program where you can earn

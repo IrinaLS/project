@@ -5,6 +5,7 @@
 
     .advantages__action {
         @include position (flex, center, space-around);
+        width: 100%;
     }
 
     .advantages__picture {
@@ -38,7 +39,6 @@
         &:hover {
             opacity: 0.8;
             font-weight: 700;
-
         }
 
         &:active {

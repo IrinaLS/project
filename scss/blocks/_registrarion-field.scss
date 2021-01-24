@@ -10,6 +10,10 @@
         width: 365px;
     }
 
+    .registration__field-item>fieldset {
+        border: none;
+    }
+
     .registration__field-title {
         @include font(16px, 19px, 300, $grey-color4);
         padding: 0 0 20px 0;
@@ -113,6 +117,7 @@
 
     .registration__field-discribe-list {
         list-style-image: url(../img/registration-check.jpg);
+        background-color: $white-color;
         padding-left: 40px;
     }
 

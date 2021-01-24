@@ -227,7 +227,7 @@
 
     .cart__cards .cart__shipping-adress {
         @include box-size (100%, 270px);
-        @include position (flex, flex-start, space-between);
+        @include position (flex, flex-start, space-around);
         margin-bottom: 130px;
     }
 

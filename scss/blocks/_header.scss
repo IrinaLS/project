@@ -2,25 +2,24 @@
     background-color: $black-color;
     width: 1600px;
     margin: 0 auto;
+}
 
-    .header__container {
-        min-height: 75px;
-        @include position(flex, center, space-between);
-    }
+.header__container {
+    min-height: 75px;
+    @include position(flex, center, space-between);
+}
 
-    .header__logo:hover {
+.header__logo:hover {
+    transform: scale(1.2);
+}
+
+.header__search {
+    padding: 10px 0 0 41px;
+    outline: none;
+
+    &:hover {
+
         transform: scale(1.2);
-    }
-
-    .header__search {
-        padding: 10px 0 0 41px;
-        outline: none;
-
-        &:hover {
-
-            transform: scale(1.2);
-        }
-
     }
 }
 

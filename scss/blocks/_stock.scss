@@ -12,18 +12,22 @@
 
         &:nth-child(1) {
             background-image: url(../img/stock-women.jpg);
+            background-color:$white-color;
         }
 
         &:nth-child(2) {
             background-image: url(../img/stock-men.jpg);
+            background-color:$white-color;
         }
 
         &:nth-child(3) {
             background-image: url(../img/stock-kid.jpg);
+            background-color:$white-color;
         }
 
         &:nth-child(4) {
             background-image: url(../img/stock-goods.jpg);
+            background-color:$white-color;
             margin-top: 30px;
             @include box-size(100%, 180px);
         }

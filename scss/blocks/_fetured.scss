@@ -18,16 +18,17 @@
 }
 
 .fetured__list {
-    display: flex;
-    margin: 18px 0 0 0;
+    width: 100%;
+    display: grid;
+    margin-top: 48px;
     padding: 0;
+    grid-template-columns: repeat(3, 360px);
     justify-content: space-between;
-    flex-wrap: wrap;
+    row-gap: 30px;
 }
 
 .fetured__item {
     display: flex;
-    margin-top: 30px;
     @include box-size(360px, 581px);
     font-family: 'Lato';
     flex-direction: column;
@@ -99,7 +100,7 @@
         text-align: center;
         text-transform: capitalize;
         text-decoration: none;
-        padding: 15px 0 14px 0;
+        padding-top: 15px;
 
         &:hover {
             animation-duration: 2s;
@@ -108,7 +109,6 @@
             outline: none;
             color: $black-color;
             font-weight: 700;
-
         }
 
         &:active {
@@ -129,13 +129,13 @@
     }
 
     .fetured__list {
-        margin-top: 57px;
         width: 100%;
-        justify-content: space-around;
-    }
-
-    .fetured__item {
-        margin: 16px 0 0 0;
+        margin-top: 72px;
+        padding: 0;
+        grid-template-columns: repeat(2, 360px);
+        justify-content: center;
+        row-gap: 16px;
+        column-gap: 16px;
     }
 
     .fetured__button {
@@ -153,10 +153,13 @@
     }
 
     .fetured__list {
-        margin: 65px 0 0 0;
-        padding: 0;
+
         width: 100%;
+        margin-top: 65px;
+        padding: 0;
+        grid-template-columns: repeat(1, 360px);
         justify-content: center;
+        row-gap: 16px;
     }
 
     .fetured__item {
